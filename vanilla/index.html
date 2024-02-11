@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="https://kit.fontawesome.com/7e878e85fd.js" crossorigin="anonymous"></script>
+    <title>To do List</title>
+</head>
+<body>
+    <div class="game">
+        <i class="fa-solid fa-dice game_icon"></i>
+        <div class="game_bar">
+            <a href="./card/index.html"><i class="fa-solid fa-diamond card_icon"></i></a>
+            <a href="./color/index.html"><i class="fa-solid fa-palette painting_icon"></i></a>
+            <a href="./drawing/index.html"><i class="fa-solid fa-paintbrush brush_icon"></i></a>
+            <a href="./random/index.html"><i class="fa-solid fa-shuffle random_icon"></i></a>
+        </div>
+    </div>
+
+
+    <h2 id="clock"> 00:00:00</h2>
+    <form id="login-form" class="hidden">
+        <input required maxlength = "15" type="text" placeholder="What is your name?"/>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    
+    <div id="todo-inner">
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To do and Press Enter">
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <div class="quote" >
+        <span id="quote2"></span> </br>
+        <span id="name"></span>
+    </div>
+
+    <script src="./src/greetings.js"> </script>
+    <script src="./src/clock.js"> </script>
+    <script src="./src/quote.js"> </script>
+    <script src="./src/background.js"> </script>
+    <script src="./src/todolist.js"> </script>
+    <script src="./src/game.js"> </script>
+</body>
+</html>

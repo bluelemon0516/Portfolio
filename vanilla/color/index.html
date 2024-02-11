@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Find Color </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7e878e85fd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="container" class="no-drag">
+    <div class="board">
+      <header class="menu">
+        <nav class="menu__nav">
+          <div class="menu__nav-time">
+            <i class="fa-solid fa-check" id="check_icon"></i>
+            <strong id="player-time">0</strong>
+          </div>
+          <div class="menu__nav-stage">
+            STAGE<strong id="player-stage"></strong>
+          </div>
+          <div class="menu__nav-home">
+            <a href="/vanilla/index.html" class="menu__nav-home--button" id="home_icon">
+              <i class="fa-solid fa-house"></i> </a>
+          </div>
+      </nav>
+      </header>
+
+      <main class="game">
+        <div class="palette">
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="modal modal-layer">
+    <div class="modal__content">
+      <div class="modal__content-title">
+      </div>
+
+      <button class="white-button modal__content-close-button" type="button">
+        닫기
+      </button>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

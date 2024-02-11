@@ -1,0 +1,184 @@
+
+* {
+    color: #FBF9F1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#login-form input {
+    background-color: transparent;
+    color: #FBF9F1;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom-color: #FBF9F1;
+    border-bottom-width: 1px;
+    width: 300px;
+    height: 50px;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+#login-form input::placeholder {
+    color: rgb(171, 171, 163);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+#greeting {
+    font-size: 4rem;
+    opacity: 0.8;
+    font-style: italic;
+    margin: 30px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#todo-form input {
+    background-color: transparent;
+    color: #FBF9F1;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom-color: #FBF9F1;
+    border-bottom-width: 1px;
+    width: 250px;
+    height: 30px;
+    font-size: 1.1rem;
+}
+
+#clock {
+    font-size: 9rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+
+#todo-inner {
+    width: 600px;
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+#todo-form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border-bottom: transparent;
+}
+
+#todo-form input {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    color: #19214aac;
+}
+
+#todo-list {
+    margin: 0px;
+    padding: 0px; 
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+
+#todo-list li {
+    display: flex;
+    padding: 5px 16px;
+    margin: 0px;
+    justify-content: space-between;
+}   
+
+#todo-list span {
+    color: #19214aac;
+    padding: 3px;
+    font-size: 1.3rem;
+}
+
+#todo-list button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    border-color: transparent;
+    color: black;
+}
+
+.quote {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#quote2 {
+    font-size: 1.5rem;
+}
+
+.game {
+    font-size: 3rem;
+    opacity: 0.8;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    display: flex;
+    float: left;
+    width: 400px;
+}
+
+.game_icon:hover {
+    transform: rotate(-15deg) scale(1.2);
+    transition: all 300ms ease-in-out;
+}
+
+.game_bar {
+    font-size: 2.7rem;
+    margin: 0 15px;
+    padding: 3px;
+    display: none;
+    z-index: 1;
+}
+
+.game:hover .game_bar {
+    display: block;
+    transition: all 500ms ease;
+}
+
+.card_icon{
+    margin: 0 3px;
+}
+
+.card_icon:hover, .painting_icon:hover, .brush_icon:hover, .random_icon:hover  {
+    color: rgb(243, 243, 185);
+}
+
