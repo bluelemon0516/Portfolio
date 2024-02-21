@@ -820,15 +820,16 @@ a > img {
 
 footer {
   background-color: var(--color-background);
-  min-width: 100%;
-  max-width: var(--size-max-width);
+  width: 100%;
+  /* max-width: var(--size-max-width); */
   margin-top: 120px;
-  padding: 60px 310px;
+  padding: 60px 0;
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .notice {
