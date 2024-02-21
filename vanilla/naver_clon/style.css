@@ -38,7 +38,6 @@ body {
   font-family: 'NanumBarunGothic', 'serif';
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
-  width: 1440px;
 }
 
 header, main {
@@ -821,7 +820,7 @@ a > img {
 
 footer {
   background-color: var(--color-background);
-  width: 100%;
+  min-width: 1440px;
   margin-top: 120px;
   padding: 60px 0;
   border-top: 1px solid var(--color-border);
@@ -833,7 +832,7 @@ footer {
 }
 
 .notice {
-  width: 1280px;
+  min-width: 1280px;
   padding: 25px 0;
   display: flex;
   flex-direction: row;
@@ -849,7 +848,7 @@ footer {
 }
 
 .partners__developers__container {
-  width: 1280px;
+  min-width: 1280px;
   padding: 25px 0;
   display: flex;
   justify-content: space-between;
@@ -906,7 +905,7 @@ footer {
 }
 
 .company__info {
-  width: 1280px;
+  min-width: 1280px;
   display: flex;
   flex-direction: row;
   justify-content: center;
